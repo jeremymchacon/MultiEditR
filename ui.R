@@ -58,7 +58,7 @@ shinyUI(
                                                                   HTML("<b>The parameters table you upload will appear here:</b>")
                                                  ),
                                                  h2("Parameters Table"),
-                                                 tableOutput("parameter_table"),
+                                                 DT::dataTableOutput("parameter_table"),
                                                  h2("Sequence files needed based upon Parameters Table"),
                                                  fluidRow(
                                                    column(width = 4, tableOutput("needed_sequence_files")),

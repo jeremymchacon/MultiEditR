@@ -1,8 +1,11 @@
 ---
 title: "MultEditR batch instructions"
-author: "Chacón"
+author: "Jeremy M. Chacón"
 date: "2025-03-14"
-output: html_document
+output: 
+  html_document:
+    theme: cerulean
+    toc: true
 output_dir: www/
 ---
 
@@ -13,21 +16,11 @@ MultieditR can detect edits in all samples at once, and produce a downloadable h
 
 This functionality is also present in the R package multieditR using detect_edits_batch(), if you prefer a command-line solution.
 
-# Outline
-
-1. Requirements – the files you need to run multieditR in batch mode
-
-2. Upload steps and download of results instructions – how to actually run and save the data
-
-3. Example data - both a parameters table and a full example dataset 
-
 # Requirements
 
-Sample/Control sequence data and parameters excel sheet
+1. A **parameters excel spreadsheet** with one row per sample, and the following columns, which must be present. Note: this software expects the header row to be in place, and correctly named. The example parameters table below can be copied or downloaded to use as a skeleton for your own samples.
 
-1. A parameters excel spreadsheet with one row per sample, and the following columns, which must be present. Note: this software expects the header row to be in place, and correctly named. The example parameters table below can be copied or downloaded to use as a skeleton for your own samples.
-
-2. For each test (row in the spreadsheet), you need two files. The sample file (which may have an edit) must be a Sanger sequence in .ab1 format. The control file, which should be the WT genotype, can be provided either as a Sanger sequence (.ab1) or simply as a fasta file (.fa, .fasta). This is designed to function on sequences around the length of Sanger sequences, so using long fastas is discouraged. If one file is used repeatedly, it only needs to be uploaded once. 
+2. For **each test (row in the spreadsheet), you need two files**. The sample file (which may have an edit) must be a Sanger sequence in .ab1 format. The control file, which should be the WT genotype, can be provided either as a Sanger sequence (.ab1) or simply as a fasta file (.fa, .fasta). This is designed to function on sequences around the length of Sanger sequences, so using long fastas is discouraged. If one file is used repeatedly, it only needs to be uploaded once. 
 
 Warning: All sequence files must be in a single directory. This is required to facilitate uploading.
 

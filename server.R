@@ -30,9 +30,9 @@ shinyServer(
     })
     
     # shows the parameters table you uploaded
-    output$parameter_table <- renderTable({
+    output$parameter_table <- renderDT({
       req(input$batch_parameters)
-      (multiEditR_params())
+      DT::datatable(multiEditR_params())
     })
     
     # makes the sequence file names have the full path (on the server)
