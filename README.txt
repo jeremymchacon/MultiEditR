@@ -9,22 +9,10 @@ https://moriaritylab.shinyapps.io/multieditr
 
 To run this program locally please do the following:
 
-1) Download and install R (https://www.r-project.org/)
-2) Open the dependencies.R file and run the script. Please note any errors that may occur during running.
-3) Copy, paste, and run the following code chunk in your command line:
-
-library(sangerseqR)
-library(tidyverse)
-library(magrittr)
-library(plyr)
-library(gamlss)
-library(readr)
-library(shiny)
-library(plotly)
-library(shinythemes)
-library(berryFunctions)
-
-3) Determine the directory of the MultiEditR app on your computer. It will look something like this:
+1) Download and install R 4.3 (https://www.r-project.org/)
+2) Install renv (install.packages("renv"))
+3) Use renv::restore() with the included renv.lock file to install depedencies
+4) Determine the directory of the MultiEditR app on your computer. It will look something like this:
 
 /Users/kluesner/Desktop/Research/EditR/multiEditR/program/working_branch/app
 
