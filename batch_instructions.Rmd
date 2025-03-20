@@ -88,6 +88,20 @@ DT::datatable(readxl::read_excel("www/parameters.xlsx"),
 
 ## Example Dataset (can be used in this app)
 
-[Download example dataset](www/multieditr_batch_example_dataset.zip)
-
 Click the button below to download a zip file containing a parameters excel spreadsheet and all of the sequence files required for those parameters. Then, after unzipping, you can use them on the upload page to try out the functionality, or as a positive control in case your own data are acting funny.
+
+
+```{r renderzip, echo = FALSE, message = FALSE}
+library(base64enc)
+
+# Read ZIP file and encode it
+zip_file <- "www/multieditr_batch_example_dataset.zip"
+zip_base64 <- base64encode(zip_file)
+
+# Create the Base64 URI
+zip_uri <- paste0("data:application/zip;base64,", zip_base64)
+```
+
+```{r results='asis', echo = FALSE}
+cat(sprintf('<a href="%s" download="multieditr_batch_example_dataset.zip">Download Example Dataset</a>', zip_uri))
+```
