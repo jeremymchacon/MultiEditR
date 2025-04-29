@@ -24,9 +24,9 @@ shinyUI(
                         sidebarLayout(
                           sidebarPanel(
                             em(paste0("Please note this application is under development.")),
-                            em(paste0("Updated ", "2024-02-28", ".")),
+                            em(paste0("Updated ", "2025-04-28", ".")),
                             p(),
-                            tags$a(href="https://www.biorxiv.org/content/biorxiv/early/2019/05/09/633685.full.pdf", "Please cite our bioRχiv preprint!"),
+                            tags$a(href="https://www.cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(21)00176-1", "Please cite our Nucleic Acids paper!"),
                             p(),
                             fileInput("batch_parameters", NULL, buttonLabel = "Upload Parameters excel sheet",
                                       accept = c(".xlsx", ".xls"),
