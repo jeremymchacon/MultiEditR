@@ -20,5 +20,6 @@ library(shiny)
 library(shinythemes)
 library(shinycssloaders)
 library(markdown)
+library(readr)
 
 

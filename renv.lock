@@ -2476,10 +2476,10 @@
       "RoxygenNote": "7.3.2",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "multieditR_Package",
+      "RemoteRepo": "multiEditR_Package",
       "RemoteUsername": "jeremymchacon",
       "RemoteRef": "HEAD",
-      "RemoteSha": "ccb0e64e5a90e7b394158ec7ac6988daca774664",
+      "RemoteSha": "a65df5f714517c793c6f7c9277903781823fecf5",
       "NeedsCompilation": "no"
     },
     "munsell": {
